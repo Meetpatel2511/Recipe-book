@@ -1,0 +1,732 @@
+*{
+    font-family: "Inter", sans-serif;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* text on left */
+  padding: 80px 50px;
+  gap: 40px;
+  background-image: url('../assets/hero-food.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 80vh;
+  position: relative;
+  border-radius: 50px;
+  z-index: 1;
+  top: 30px;
+  width: 95vw;
+  left: 30px;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+.hero-content {
+  flex: 1;
+  z-index: 2; /* above overlay */
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: black;
+}
+
+.hero-content h1 span {
+  color: #ffa726;
+}
+
+.hero-content p {
+  font-size: 25px;
+  color: black;
+  margin: 20px 0 30px;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  background: #ffa726;
+  color: #222;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* ------------------ Responsive ------------------ */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+    min-height: 70vh;
+    left: auto;
+    width: 90vw;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 20px;
+    min-height: 60vh;
+    border-radius: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .explore-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+
+/* 2nd page */
+
+:root{
+  --bg: #f7f7f7;
+  --text: #0f0f0f;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --ring: #e5e7eb;
+  --accent: #f2c04c;
+  --brand: #111827;
+}
+
+*{box-sizing:border-box}
+
+.feature-wrap{
+  display:grid;
+  grid-template-columns: 1fr 520px;
+  gap:28px;
+  align-items:stretch;
+  padding:24px;
+  background:transparent;
+  width:100%;
+  margin-top: 20px;
+}
+
+.feature-left{
+  background:#fafafa;
+  /* border:1px solid var(--ring); */
+  border-radius:18px;
+  padding:28px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:28px;
+}
+
+.feature-item{
+  margin-top: 15px;
+}
+
+.icon-round{
+  width:44px;
+  height:44px;
+  margin-bottom: 15px;
+  border-radius:999px;
+  background:#fff;
+  /* border:1px solid var(--ring); */
+  display:grid;
+  place-items:center;
+  flex:0 0 44px;
+}
+
+.ico{display:block; width:22px; height:22px; background-size:22px 22px; background-repeat:no-repeat}
+.ico.user{ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%2322272a" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21a8 8 0 1 0-16 0"/><circle cx="12" cy="7" r="4"/></svg>'); }
+.ico.globe{ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%2322272a" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg>'); }
+.ico.heart{ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%2322272a" stroke-width="2" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 22l7.8-8.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>'); }
+
+.text h3{
+  font-size:18px;
+  margin:0 0 6px;
+  color:#111827;
+}
+.text p{
+  margin:0;
+  color:#4b5563;
+  line-height:1.5;
+  font-size:15px;
+}
+
+.feature-right{
+  position:relative;
+  display: flex;
+  background: #fafafa;
+  /* border:1px solid var(--ring); */
+  border-radius:18px;
+  padding:18px 18px 56px 18px;
+  overflow:hidden;
+}
+
+.media{
+  width:100%;
+  height:190px;
+  border-radius:14px;
+  overflow:hidden;
+}
+.hero-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.see-recipe{
+  justify-self:end;
+  text-decoration:none;
+  color:#111827;
+  border-bottom:2px solid #111827;
+  padding-bottom:2px;
+  font-weight:600;
+}
+
+.player{
+  position:absolute;
+  left:18px;
+  right:18px;
+  bottom:14px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.play-btn{
+  width:28px;height:28px;border-radius:999px;border:1px solid var(--ring);
+  display:grid;place-items:center;background:#fff;cursor:pointer;
+}
+.play-triangle{
+  width:0;height:0;border-left:8px solid #111827;border-top:6px solid transparent;border-bottom:6px solid transparent; margin-left:2px;
+}
+.time{
+  font-size:12px;color:#6b7280;min-width:72px;
+}
+.progress{
+  height:6px; background:#f3f4f6; border-radius:999px; flex:1; overflow:hidden;
+}
+.progress .bar{
+  height:100%; background:#fbbf24; width:0; border-radius:999px; transition:width .3s ease;
+}
+
+/* Responsive */
+@media (max-width: 1024px){
+  .feature-wrap{ grid-template-columns: 1fr; }
+  .feature-right{ order:2 }
+}
+@media (max-width: 640px){
+  .feature-left{ grid-template-columns: 1fr; }
+  .title{ font-size:22px }
+}
+
+ /* 3rd page  */
+
+ :root{
+  --bg: #ffffff;
+  --ink: #0f172a;
+  --muted: #6b7280;
+  --pill: #111827;
+  --pillText: #ffffff;
+  --chip: #111827;
+  --chipText: #111827;
+  --shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+/* Canvas hero that layers children in one grid area */
+.tacos-hero{
+  position: relative;
+  display: grid;
+  grid-template-areas: "hero";
+  min-height: 72vh;          /* tall hero */
+  max-height: 760px;
+  place-items: start stretch; /* text aligns start */
+  overflow: hidden;
+  background: var(--bg);
+}
+.tacos-hero > *{ grid-area: hero; } /* stack all children on the same grid cell */
+
+/* Background image covering the canvas with left-sided focal content */
+.tacos-hero__bg{
+  background-image:
+    url("../assets/3dpage.avif");
+  background-size: cover;
+  background-position: left center;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 30px; */
+  /* margin-left: 30px; */
+  margin-bottom: 30px;
+}
+/* Remove white wash on very wide screens to reveal crisp image; keep readability */
+@media (min-width: 1200px){
+  .tacos-hero__bg{
+    background-image:
+      url("../assets/3dpage.avif");
+  }
+}
+
+/* Content block right side */
+.tacos-hero__content{
+  align-self: center;
+  justify-self: end;
+  width: min(980px, 60vw);
+  padding-right: 4vw;
+}
+
+.tacos-hero__title{
+  font-size: clamp(42px, 6vw, 98px);
+  line-height: 0.95;
+  letter-spacing: -0.5px;
+  color: var(--ink);
+  margin: 0 0 18px 0;
+  font-weight: 800;
+}
+
+.tacos-hero__subtitle{
+  font-size: clamp(16px, 2.1vw, 24px);
+  color: var(--muted);
+  margin: 0 0 34px 0;
+  max-width: 52ch;
+}
+
+/* Meta row */
+.tacos-hero__meta{
+  display:flex;
+  gap:26px;
+  flex-wrap:wrap;
+}
+.meta-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color: var(--ink);
+  font-weight: 600;
+}
+.dot{
+  width:24px; height:24px; border-radius:999px; background:#fff; border:1px solid #e5e7eb; display:inline-block; position:relative;
+}
+.dot::after{ content:""; position:absolute; inset:0; margin:auto; }
+.clock::after{
+  width:12px; height:12px; border:2px solid #111827; border-radius:50%;
+  top:5px; left:5px;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.clock::before{
+  content:""; position:absolute; width:2px; height:6px; background:#111827; left:11px; top:6px; transform-origin: bottom center; transform: rotate(90deg);
+}
+.chef::after{
+  width:14px;height:10px;border:2px solid #111827;border-bottom-left-radius:10px;border-bottom-right-radius:10px;top:7px;left:5px;
+}
+.chef::before{
+  content:""; position:absolute; width:10px; height:6px; border:2px solid #111827; border-bottom:none; border-radius:8px 8px 0 0; left:7px; top:4px;
+}
+
+/* Floating buttons bottom-right */
+.tacos-hero__float{
+  justify-self:end;
+  align-self:end;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin: 0 18px 18px 0;
+}
+.float-btn{
+  background:#fff;
+  color:#111827;
+  border:none;
+  border-radius:12px;
+  padding:12px 16px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  box-shadow: var(--shadow);
+  font-weight:700;
+  cursor:pointer;
+  margin-right: 30px;
+}
+.float-btn .dot{ background:#fff; }
+.float-btn .cart::after{
+  content:""; position:absolute; width:14px; height:10px; border:2px solid #111827; border-top:none; left:5px; top:7px;
+}
+.float-btn .cart::before{
+  content:""; position:absolute; width:14px; height:8px; border:2px solid #111827; border-bottom:none; left:5px; top:3px; border-radius:3px 3px 0 0;
+}
+.float-btn.secondary{
+  background:#ffffff;
+  opacity:.96;
+  margin-right: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px){
+  .tacos-hero{
+    min-height: 64vh;
+  }
+  .tacos-hero__content{
+    width: min(92vw, 760px);
+    justify-self: center;
+    text-align: left;
+    padding: 0 20px;
+  }
+  .tacos-hero__pill{
+    margin: 20px;
+  }
+}
+@media (max-width: 640px){
+  .tacos-hero__title{ font-size: clamp(36px, 8.5vw, 56px); }
+  .tacos-hero__subtitle{ font-size: 15px; }
+  .tacos-hero__float{ position: static; margin: 14px 20px 20px auto; }
+}
+
+/* 4d page  */
+
+:root{
+  --ink:#0f172a;
+  --muted:#6b7280;
+  --accent:#fbbf24;         /* matches the orange “Recipes” */
+  --card:#fff;
+  --ring:#e5e7eb;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+*{box-sizing:border-box}
+
+.popular-wrap{
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+   background: #fafafa;
+  
+}
+
+.popular-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+  
+}
+.popular-title{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: clamp(28px, 4.6vw, 54px);
+  color: var(--ink);
+  letter-spacing:-0.3px;
+}
+.popular-title .accent{ color: var(--accent); }
+
+.more-pill{
+  text-decoration:none;
+  background:#111827;
+  color:#fff;
+  padding:10px 16px;
+  border-radius:999px;
+  font-weight:600;
+  white-space:nowrap;
+  box-shadow: var(--shadow);
+}
+
+/* Grid for 3 equal height cards */
+.card-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:28px;
+ 
+}
+@media (max-width: 1024px){ .card-grid{ grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px){ .card-grid{ grid-template-columns: 1fr; } }
+
+/* Card */
+.recipe-card{
+  background:#f8f8f8;
+  /* border:1px solid var(--ring); */
+  border-radius:22px;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  box-shadow: var(--shadow);
+}
+.card-title{
+  margin:0;
+  font-size: clamp(22px, 2.4vw, 34px);
+  line-height:1.1;
+  color: var(--ink);
+}
+
+/* Image block with large rounded image */
+.image-wrap{
+  background: #fff;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--ring);
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  /* keep tall feel similar to screenshot */
+  aspect-ratio: 16 / 15;
+  display:block;
+}
+.image-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* Bottom pill CTA inside card */
+.cta-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  background:#111827;
+  color:#fff;
+  border:none;
+  width:100%;
+  padding:14px 16px;
+  border-radius:16px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow: var(--shadow);
+}
+.cta-icon{
+  width:28px; height:28px; border-radius:999px; background:#fff; display:inline-block; position:relative;
+}
+.cta-icon::after{
+  content:""; position:absolute; inset:0; margin:auto; width:12px; height:12px; border-radius:50%; border:2px solid #111827;
+}
+
+/* Subtle hover (can be replaced after hover design is provided) */
+.recipe-card:hover .image-wrap img{
+  transform: scale(1.02);
+}
+.image-wrap img{ transition: transform .35s ease; }
+
+/* Hover overlay base */
+.image-wrap{
+  position: relative; /* ensure overlay positioning */
+}
+
+/* Layer that fades in with orange tint */
+.hover-layer{
+  position:absolute; inset:0;
+  display:grid; place-items:start;
+  padding:20px;
+  background: linear-gradient(180deg, rgba(245,158,11,.78) 0%, rgba(245,158,11,.78) 100%);
+  color:#fff;
+  opacity:0;
+  transition: opacity .35s ease;
+  pointer-events:none; /* overlay is decorative; clicks pass to CTA */
+  border-radius:18px; /* match image radius */
+}
+
+/* Copy block inside overlay */
+.hover-copy{
+  max-width: 34ch;
+}
+
+.hover-title{
+  margin:4px 0 10px 0;
+  font-size: clamp(22px, 2.3vw, 36px);
+  line-height:1.1;
+  color:#fff;
+}
+.hover-sub{
+  margin:0 0 14px 0;
+  font-size: clamp(13px, 1.2vw, 16px);
+  line-height:1.45;
+  color:#fff;
+  opacity:.95;
+}
+
+/* Chips row */
+.hover-chips{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.chip{
+  background:#ffffff;
+  color:#0f172a;
+  border-radius:999px;
+  padding:8px 12px;
+  font-weight:700;
+  font-size:13px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.10);
+  transform: translateY(8px);
+  opacity:0;
+  transition: transform .35s ease, opacity .35s ease;
+}
+
+/* Hover trigger on the whole card area */
+.recipe-card:hover .hover-layer{ opacity:1; }  /* fade in overlay */
+.recipe-card:hover .image-wrap img{ transform: scale(1.04); } /* subtle zoom */
+.recipe-card:hover .chip{ opacity:1; transform: translateY(0); } /* chips rise */
+
+/* Staggered chip timing for a natural reveal */
+.hover-chips .chip:nth-child(1){ transition-delay: .06s; }
+.hover-chips .chip:nth-child(2){ transition-delay: .12s; }
+.hover-chips .chip:nth-child(3){ transition-delay: .18s; }
+
+
+/* footer  */
+
+:root{
+  --bg:#1f1f1f;
+  /* --ink:#e5e7eb; */
+  --muted:#a3a3a3;
+  --accent:#f5a524; /* orange VORIZ */
+  --ring:#2c2c2c;
+}
+
+*{box-sizing:border-box}
+
+.flz-footer{
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: 20px;
+  padding: 28px 28px 18px;
+  /* max-width: 1200px; */
+  margin: 24px auto;
+}
+
+/* Top grid areas */
+.flz-grid{
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+@media (max-width: 960px){
+  .flz-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px){
+  .flz-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Brand block */
+.logo{
+  font-weight: 800;
+  font-size: clamp(28px, 4.8vw, 44px);
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.logo-left{ color:#fff; }
+.logo-accent{ color: var(--accent); }
+
+.tagline{
+  margin: 0 0 20px;
+  color: var(--ink);
+  opacity:.9;
+  max-width: 42ch;
+}
+
+/* Columns */
+.flz-col h4{
+  margin: 0 0 12px;
+  font-size: 18px;
+  color:#fff;
+}
+.flz-col ul{
+  list-style:none; margin:0; padding:0; display:grid; gap:10px;
+}
+.flz-col a{
+  color: var(--muted);
+  text-decoration:none;
+  transition: color .2s ease;
+}
+.flz-col a:hover{ color:#fff; }
+.flz-col a.active{ color: var(--accent); }
+
+/* Newsletter row spans full grid width at bottom of grid on bigger screens */
+.flz-newsletter{
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  margin-top: 6px;
+}
+.flz-newsletter input{
+  width: 100%;
+  background:#2a2a2a;
+  color:#fff;
+  border:1px solid var(--ring);
+  border-radius: 999px;
+  padding: 16px 18px;
+  outline: none;
+}
+.flz-newsletter input::placeholder{ color:#bdbdbd; }
+
+/* pill button */
+.flz-newsletter .pill{
+  background: var(--accent);
+  color:#1b1b1b;
+  border:none;
+  border-radius: 999px;
+  padding: 14px 24px;
+  font-weight:700;
+  cursor:pointer;
+  transition: transform .15s ease, filter .2s ease;
+}
+.flz-newsletter .pill:hover{ filter: brightness(0.95); transform: translateY(-1px); }
+
+/* Copyright line */
+.copy{
+  margin-top: 14px;
+  color:#8b8b8b;
+  font-size: 14px;
+  border-top:1px solid var(--ring);
+  padding-top: 12px;
+}
+.sm-only{ display:none; }
+.lg-only{ display:block; }
+@media (max-width: 600px){
+  .lg-only{ display:none; }
+  .sm-only{ display:block; }
+}
+
+/* Accessibility helpers */
+.sr-only{
+  position:absolute !important;
+  width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+
+
+
+

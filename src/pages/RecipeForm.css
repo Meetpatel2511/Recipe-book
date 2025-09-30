@@ -1,0 +1,166 @@
+:root{
+  --accent:#f5a524;      /* orange */
+  --ink:#111827;         /* dark text */
+}
+
+/* Rounded banner with right-aligned image and left fade for legibility */
+.rs-hero{
+  margin-top: 20px;
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+  min-height: clamp(200px, 28vw, 360px);
+  /* replace with your asset path */
+  background:
+    linear-gradient(90deg,
+      rgba(255,255,255,1) 0%,
+      rgba(255,255,255,.96) 30%,
+      rgba(255,255,255,.80) 50%,
+      rgba(255,255,255,0) 70%
+    ),
+    url("../assets/addrecipe.avif") right center / cover no-repeat;
+  padding: clamp(18px, 3.2vw, 36px);
+}
+
+/* optional subtle texture layer to mimic screenshot feel */
+.rs-hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background: radial-gradient(ellipse at 18% 12%, rgba(0,0,0,.03), transparent 40%);
+  pointer-events:none;
+}
+
+/* Text block */
+.rs-content{ position: relative; z-index: 1; max-width: 780px; }
+
+.rs-content h2{
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: var(--ink);
+  line-height: 0.98;
+  font-size: clamp(32px, 6.6vw, 72px);
+}
+
+.rs-content .accent{ color: var(--accent); }
+
+/* text sec  */
+
+.text-sec{
+  max-width:800px;
+  margin:40px auto 0 auto;
+  text-align:center;
+  padding:0 12px;
+}
+
+.text-sec h1{
+  font-size:clamp(28px,5.2vw,32px);
+  /* font-weight:500; */
+  color:var(--ink);
+  margin-bottom:12px;
+}
+
+.check{ color:var(--accent); }
+
+.dec{
+  color: rgb(189, 180, 180);
+  font-size: 20px;
+  margin-top:8px;
+  line-height:1.4;
+}
+
+/* form  */
+
+/* Outer card */
+.container.mt-4 form{
+  background:#f7f8f9;
+  border:1px solid #eef0f2;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 10px 24px rgba(0,0,0,.06);
+}
+
+/* Grid: two columns on md+, one column on small */
+.container.mt-4 form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:16px 16px;          /* row gap, col gap */
+}
+
+/* Make single-line inputs consistent */
+.container.mt-4 form .form-control{
+  height:48px;
+  padding:12px 14px;
+  font-size:15px;
+  background:#fff;
+  border:1px solid #eceff3;
+  border-radius:12px;
+  box-shadow:0 2px 10px rgba(0,0,0,.04) inset;
+}
+
+/* Textareas: span full width where appropriate */
+.container.mt-4 form textarea.form-control{
+  min-height:130px;
+  resize:vertical;
+}
+
+/* Field placement: first row fields split 4 ways */
+.container.mt-4 form .form-control:nth-of-type(1){ grid-column:1 / 2; } /* Title */
+.container.mt-4 form .form-control:nth-of-type(2){ grid-column:2 / 3; } /* Image URL */
+.container.mt-4 form .form-control:nth-of-type(3){ grid-column:1 / 2; } /* Duration */
+.container.mt-4 form .form-control:nth-of-type(4){ grid-column:2 / 3; } /* Author */
+
+/* Big textareas side-by-side */
+.container.mt-4 form textarea.form-control:nth-of-type(1){ grid-column:1 / 2; } /* Description */
+.container.mt-4 form textarea.form-control:nth-of-type(2){ grid-column:2 / 3; } /* Ingredients */
+
+/* Next row: Chef + Tags */
+.container.mt-4 form .form-control:nth-of-type(5){ grid-column:1 / 2; } /* Chef Name */
+.container.mt-4 form .form-control:nth-of-type(6){ grid-column:2 / 3; } /* Tags */
+
+/* Steps textarea spans full width */
+.container.mt-4 form textarea.form-control:nth-of-type(3){
+  grid-column:1 / -1;
+}
+
+/* Submit button full width at bottom */
+.container.mt-4 form .btn.btn-success{
+  grid-column:1 / -1;
+  width:100%;
+  background:#1f1f1f !important;
+  border:none !important;
+  color:#fff !important;
+  border-radius:999px;
+  padding:14px 18px;
+  font-weight:700;
+  letter-spacing:.2px;
+  box-shadow:0 6px 18px rgba(0,0,0,.12);
+}
+
+/* Focus ring */
+.container.mt-4 form .form-control:focus{
+  outline:0;
+  border-color:#d7dee6;
+  box-shadow:0 0 0 3px rgba(17,24,39,.08), 0 2px 10px rgba(0,0,0,.05) inset;
+}
+
+/* Mobile: stack everything nicely */
+@media (max-width: 768px){
+  .container.mt-4 form{
+    grid-template-columns:1fr;
+    gap:14px;
+    padding:16px;
+  }
+  .container.mt-4 form .form-control,
+  .container.mt-4 form textarea.form-control,
+  .container.mt-4 form .btn.btn-success{
+    grid-column:1 / -1 !important;
+  }
+}
+
+.ad{
+    text-align:center;
+    margin-bottom:16px;
+    font-size:clamp(22px,4.2vw,28px);
+    color:var(--ink);
+    }

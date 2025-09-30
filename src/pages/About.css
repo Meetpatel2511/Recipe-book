@@ -1,0 +1,233 @@
+:root{
+  --accent:#f5a524;     /* orange word */
+  --ink:#111827;        /* dark heading */
+}
+
+/* Rounded banner with right food photo and left fade for readability */
+.ac-hero{
+    margin-top: 30px;
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+  min-height: clamp(200px, 26vw, 340px);
+  /* replace with your plate photo path */
+  background:
+    url("../assets/about1.avif") right center/cover no-repeat;
+  padding: clamp(18px, 3vw, 36px);
+}
+
+/* optional subtle wood texture look */
+.ac-hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background: radial-gradient(ellipse at 18% 12%, rgba(0,0,0,.03), transparent 40%);
+  pointer-events:none;
+}
+
+/* text */
+.ac-content{ position:relative; z-index:1; max-width: 900px; }
+.ac-content h2{
+  margin:0;
+  font-weight:800;
+  color: var(--ink);
+  letter-spacing:-.4px;
+  line-height: 1.02;
+  font-size: clamp(28px, 6.2vw, 64px);
+}
+.ac-content .accent{ color: var(--accent); }
+
+
+/* 2ns  */
+
+.fs-wrap{
+    margin-top: 30px;
+  background: var(--panel);
+  border-radius: 22px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.06);
+  padding: 60px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  align-items: center;
+}
+
+/* Individual stat */
+.fs-item{
+  text-align: left;
+}
+
+.fs-num{
+  color: var(--accent);
+  font-weight: 800;
+  font-size: clamp(22px, 3.2vw, 38px);
+  line-height: 1.1;
+}
+
+.fs-sub{
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: clamp(14px, 1.4vw, 18px);
+}
+
+/* Responsive: 2 cols on tablets, 1 col on phones */
+@media (max-width: 1024px){
+  .fs-wrap{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px){
+  .fs-wrap{ grid-template-columns: 1fr; }
+}
+
+/* 3rd  */
+
+.vh-outer{
+  position: relative;
+  padding-bottom: 120px; /* room for the overlap on small screens */
+}
+
+/* top hero */
+.vh-hero{
+  position: relative;
+  min-height: clamp(320px, 48vw, 560px);
+  border-radius: 28px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,.10) 35%, rgba(0,0,0,0) 55%),
+    url("../assets/about2.webp") center/cover no-repeat;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  padding: clamp(20px, 4vw, 36px);
+}
+
+/* big heading with orange word */
+.vh-title{
+  margin: clamp(10px, 3vw, 24px) 0 0 0;
+  font-size: clamp(36px, 6.5vw, 68px);
+  font-weight: 800;
+  line-height: 1.05;
+  color:black;
+  max-width: 820px;
+}
+.vh-title .accent{ color: var(--accent); }
+
+/* pill CTA bottom-left */
+.vh-cta{
+  align-self:flex-start;
+  margin-top: auto;
+  margin-bottom: clamp(16px, 3vw, 28px);
+  background: rgba(0,0,0,.75);
+  color:#fff;
+  text-decoration:none;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight:700;
+  box-shadow: 0 14px 30px rgba(0,0,0,.25);
+}
+
+/* overlapping card */
+.vh-card{
+  position: relative;
+  /* max-width: 1200px; */
+  /* margin: -70px 0;    pull up to overlap hero */
+  /* margin-left: 250px; */
+  background:#fff;
+  /* border:1px solid var(--ring); */
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(0,0,0,.08);
+  padding: clamp(18px, 3vw, 28px);
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(18px, 2.5vw, 28px);
+  margin-top: 20px;
+}
+
+.vh-item h3{
+  margin: 8px 0 8px;
+  font-size: clamp(18px, 2.2vw, 22px);
+  color: var(--ink);
+}
+.vh-item p{
+  margin:0;
+  color: var(--muted);
+  line-height:1.6;
+}
+
+/* simple round icons matching screenshot style */
+.vh-ico{
+  width:42px; height:42px;
+  display:grid; place-items:center;
+  border:1px solid var(--ring);
+  border-radius:999px;
+  background:#fff;
+  font-size:20px; color:#111827;
+}
+
+/* responsiveness */
+@media (max-width: 960px){
+  .vh-card{ grid-template-columns: 1fr; }
+  .vh-cta{ margin-top: 24px; }
+}
+
+/* 4th page  */
+
+.tc-wrap{
+  max-width:1200px;
+  margin:0 auto;
+  padding: 10px 16px 32px;
+}
+
+.tc-title{
+  text-align:center;
+  margin: 0 0 18px;
+  font-weight: 800;
+  letter-spacing:-.3px;
+  color: var(--ink);
+  font-size: clamp(26px, 4.6vw, 48px);
+}
+.tc-title .accent{ color: var(--accent); }
+
+/* grid */
+.tc-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+@media (max-width: 960px){
+  .tc-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px){
+  .tc-grid{ grid-template-columns: 1fr; }
+}
+
+/* card */
+.tc-card{
+  background:#fff;
+  border-radius:18px;
+  padding:12px 12px 18px;
+  box-shadow:0 14px 40px rgba(0,0,0,.06);
+}
+
+/* big photo with rounded corners, no overflow artifacts */
+.tc-photo{
+  aspect-ratio: 4 / 5;
+  border-radius:14px;
+  overflow:hidden;
+  background:#f3f4f6;
+}
+.tc-photo img{
+  width:100%; height:100%; object-fit:cover; display:block;
+  border-radius: inherit;           /* keeps corners crisp */
+}
+
+/* text */
+.tc-name{
+  margin:14px 6px 4px;
+  font-size: clamp(16px, 2.2vw, 22px);
+  color: var(--ink);
+}
+.tc-role{
+  margin:0 6px;
+  color: var(--muted);
+  font-size: 15px;
+}

@@ -1,0 +1,259 @@
+{
+  "recipes": [
+    {
+      "title": "Spicy Beef Mexican Tacos",
+      "image": "https://framerusercontent.com/images/lrWM7HSSkjZvFovHKzlOEGrVO6s.png?scale-down-to=2048",
+      "duration": "15 min",
+      "author": "Sujan patel",
+      "chef": "Maria Lopez",
+      "tags": [
+        "Appetizers",
+        "International Flavors"
+      ],
+      "description": "Juicy beef tacos with spicy flavors, served with fresh salsa and guacamole.",
+      "ingredients": [
+        "500g ground beef",
+        "8 taco shells",
+        "1 onion, chopped",
+        "2 tomatoes, diced",
+        "Lettuce leaves",
+        "Cheddar cheese",
+        "Salsa",
+        "Guacamole"
+      ],
+      "steps": [
+        "Cook onions until golden.",
+        "Add beef and cook until browned.",
+        "Season with spices.",
+        "Warm taco shells.",
+        "Fill tacos with beef, vegetables, cheese, and toppings."
+      ],
+      "cta": "See Complete Recipe",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Caprese Salad Skewers",
+      "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1600&auto=format&fit=crop",
+      "duration": "10 min",
+      "author": "Chef Luca",
+      "chef": "Luca Bianchi",
+      "tags": [
+        "Vegetarian Delights",
+        "Desserts & Sweets"
+      ],
+      "cta": "See Complete Recipe",
+      "description": "Fresh mozzarella, cherry tomatoes, and basil leaves drizzled with balsamic glaze on skewers.",
+      "ingredients": [
+        "Cherry tomatoes",
+        "Mozzarella balls",
+        "Fresh basil leaves",
+        "Balsamic glaze",
+        "Olive oil",
+        "Salt and pepper"
+      ],
+      "steps": [
+        "Thread tomatoes, mozzarella, and basil onto skewers.",
+        "Drizzle with olive oil and balsamic glaze.",
+        "Season with salt and pepper.",
+        "Serve immediately."
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Quinoa & Chickpea Buddha",
+      "image": "https://framerusercontent.com/images/IaxbEZzHXzPaKk2swKTR25uHOY.jpg?scale-down-to=512",
+      "duration": "20 min",
+      "author": "Chef Mei",
+      "chef": "Mei Chen",
+      "tags": [
+        "Main Courses",
+        "Healthy Eats"
+      ],
+      "cta": "See Complete Recipe",
+      "description": "A nutrient-packed bowl of quinoa, chickpeas, roasted vegetables, and a tangy dressing.",
+      "ingredients": [
+        "1 cup quinoa",
+        "1 can chickpeas",
+        "Assorted vegetables",
+        "Olive oil",
+        "Lemon juice",
+        "Salt and pepper"
+      ],
+      "steps": [
+        "Cook quinoa according to package.",
+        "Roast vegetables with olive oil and seasoning.",
+        "Mix chickpeas and quinoa.",
+        "Top with roasted vegetables and drizzle dressing."
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Creamy Chicken Parmesan",
+      "image": "https://framerusercontent.com/images/vwfbH7DuIoDcK2rHfpLhtfkS8.png",
+      "duration": "30 min",
+      "author": "Chef Antonio",
+      "chef": "Antonio Rossi",
+      "tags": [
+        "Main Courses"
+      ],
+      "cta": "See Complete Recipe",
+      "description": "Tender chicken breasts coated in breadcrumbs, baked, and topped with tomato sauce and melted cheese.",
+      "ingredients": [
+        "2 chicken breasts",
+        "1 cup breadcrumbs",
+        "1 cup tomato sauce",
+        "100g mozzarella",
+        "1 egg",
+        "Olive oil",
+        "Salt and pepper"
+      ],
+      "steps": [
+        "Preheat oven to 180°C.",
+        "Coat chicken in beaten egg and breadcrumbs.",
+        "Bake for 20 minutes.",
+        "Add tomato sauce and cheese on top.",
+        "Bake until cheese melts."
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Mango Tango Smoothie",
+      "image": "https://images.unsplash.com/photo-1497534446932-c925b458314e?q=80&w=1600&auto=format&fit=crop",
+      "duration": "5 min",
+      "author": "Chef Aisha",
+      "chef": "Aisha Khan",
+      "tags": [
+        "Healthy Eats",
+        "Quick & Easy Supper"
+      ],
+      "cta": "See Complete Recipe",
+      "description": "A refreshing tropical smoothie made with ripe mangoes, yogurt, and a hint of honey.",
+      "ingredients": [
+        "2 ripe mangoes",
+        "1 cup yogurt",
+        "1 tbsp honey",
+        "Ice cubes"
+      ],
+      "steps": [
+        "Peel and chop mangoes.",
+        "Blend mangoes, yogurt, honey, and ice until smooth.",
+        "Serve chilled."
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Chocolate Lava Cake",
+      "image": "https://www.unicornsinthekitchen.com/wp-content/uploads/2016/02/Molten-chocolate-lava-cake-2-700px.jpg",
+      "duration": "25 min",
+      "author": "Chef Pierre",
+      "chef": "Pierre Dupont",
+      "tags": [
+        "Desserts & Sweets",
+        "International Flavors"
+      ],
+      "cta": "See Complete Recipe",
+      "description": "Warm chocolate cakes with gooey molten center, perfect for chocolate lovers.",
+      "ingredients": [
+        "100g dark chocolate",
+        "50g butter",
+        "2 eggs",
+        "50g sugar",
+        "30g flour"
+      ],
+      "steps": [
+        "Preheat oven to 200°C.",
+        "Melt chocolate and butter.",
+        "Mix eggs and sugar, then combine with chocolate.",
+        "Add flour and pour into molds.",
+        "Bake 10-12 minutes."
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Grilled Salmon with Lemon Butter",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop",
+      "duration": "20 min",
+      "author": "Chef Elena",
+      "chef": "Elena Garcia",
+      "tags": [
+        "Healthy Eats",
+        "Main Courses"
+      ],
+      "cta": "See Complete Recipe",
+      "description": "Tender grilled salmon fillets topped with zesty lemon butter sauce.",
+      "ingredients": [
+        "2 salmon fillets",
+        "2 tbsp butter",
+        "1 lemon",
+        "Salt and pepper",
+        "Fresh parsley"
+      ],
+      "steps": [
+        "Preheat grill.",
+        "Season salmon with salt and pepper.",
+        "Grill salmon 5-6 min each side.",
+        "Mix melted butter with lemon juice.",
+        "Drizzle sauce over salmon and garnish with parsley."
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Classic Margherita Pizza",
+      "image": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_1200,q_auto,fl_lossy,dpr_auto,c_fill,f_auto,h_800,g_auto/uceh3ievdfpo3g7ektv0",
+      "duration": "18 min",
+      "author": "Chef Marco",
+      "chef": "Marco Rossi",
+      "tags": [
+        "Vegetarian Delights",
+        "International Flavors"
+      ],
+      "cta": "See Complete Recipe",
+      "description": "A timeless pizza with fresh mozzarella, tomato sauce, and basil on a thin crust.",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Fresh mozzarella",
+        "Fresh basil leaves",
+        "Olive oil",
+        "Salt"
+      ],
+      "steps": [
+        "Preheat oven to 220°C.",
+        "Roll out dough and spread tomato sauce.",
+        "Add mozzarella and basil.",
+        "Bake 10-12 minutes until crust is golden."
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Blueberry Pancakes",
+      "image": "https://i.pinimg.com/originals/05/29/1e/05291eb4a3d4216ee5cb7bc675518b09.jpg",
+      "duration": "12 min",
+      "author": "Chef Emily",
+      "chef": "Emily Watson",
+      "tags": [
+        "Breakfast",
+        "Desserts & Sweets"
+      ],
+      "cta": "See Complete Recipe",
+      "description": "Fluffy pancakes loaded with fresh blueberries and drizzled with maple syrup.",
+      "ingredients": [
+        "1 cup flour",
+        "1 tbsp sugar",
+        "1 tsp baking powder",
+        "1/2 cup milk",
+        "1 egg",
+        "1/2 cup blueberries",
+        "Maple syrup"
+      ],
+      "steps": [
+        "Mix flour, sugar, baking powder.",
+        "Add milk and egg to form batter.",
+        "Fold in blueberries.",
+        "Cook pancakes on a greased pan until golden.",
+        "Serve with maple syrup."
+      ]
+    }
+  ]
+}
